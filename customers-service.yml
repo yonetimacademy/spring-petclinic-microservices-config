@@ -24,17 +24,17 @@ management:
       endpoint: http://tracing-server:9411/api/v2/spans
 
 ---
-spring:
-  config:
-    activate:
-      on-profile: mysql
-  datasource:
-    url: jdbc:mysql://mysql-server:3306/petclinic
-    username: root
-    password: petclinic
-    driver-class-name: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: none
-    show-sql: true
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+# spring:
+#   config:
+#     activate:
+#       on-profile: mysql
+#   datasource:
+#     url: jdbc:mysql://mysql-server:3306/petclinic
+#     username: root
+#     password: petclinic
+#     driver-class-name: com.mysql.cj.jdbc.Driver
+#   jpa:
+#     hibernate:
+#       ddl-auto: none
+#     show-sql: true
+#     database-platform: org.hibernate.dialect.MySQL8Dialect
