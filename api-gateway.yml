@@ -6,10 +6,6 @@ zuul:
     visits-service: /visit/**
     customers-service: /customer/**
     api-gateway: /gateway/**
-  ribbon:
-    eager-load:
-      enabled: true
-      clients: customers-service, vets-service, visits-service, admin-server, discovery-server, genai-service, api-gateway
 
 server:
   port: 8080
